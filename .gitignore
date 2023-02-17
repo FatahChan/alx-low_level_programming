@@ -1,7 +1,8 @@
 [!0-9]
 *~
 !README.md
-
+*.exe
+*.dll
 
 
 
