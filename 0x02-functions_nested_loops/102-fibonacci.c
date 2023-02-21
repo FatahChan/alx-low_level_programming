@@ -17,7 +17,7 @@ j = i + j;
 printf("%lu ", j);
 if (k < count - 2)
 {
-printf(", ");
+printf(",");
 }
 }
 return (0);
