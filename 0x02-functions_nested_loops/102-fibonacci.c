@@ -6,15 +6,15 @@
  */
 int main(void)
 {
-unsigned long i = 1, j = 2, k, count = 50;
+unsigned long long i = 1, j = 2, k, count = 50;
 
-printf("%lu, %lu, ", i, j);
-for (k = 0; k < count; k++)
+printf("%llu, %llu, ", i, j);
+for (k = 2; k < count; k+=2)
 {
 i = i + j;
-printf("%lu, ", i);
+printf("%llu, ", i);
 j = i + j;
-printf("%lu, ", j);
+printf("%llu, ", j);
 }
 return (0);
 }
