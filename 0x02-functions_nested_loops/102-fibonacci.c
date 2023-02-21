@@ -20,5 +20,6 @@ if (k < count - 2)
 printf(", ");
 }
 }
+printf("\n");
 return (0);
 }
