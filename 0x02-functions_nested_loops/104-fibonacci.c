@@ -4,17 +4,17 @@
  *
  * Return: Always 0.
  */
-int main(void)
+int main()
 {
-unsigned long int i = 1, j = 2, k, sum = 2;
-
-for (k = 2; k < 98; k += 2)
-{
-j = i + j;
-if (j % 10 == 1 || j % 10 == 2)
-printf("%lu, ", j);
-i = j - i;
-}
-printf("%lu\n", sum);
-return (0);
+    unsigned long int a = 1, b = 2, c, i;
+    printf("%lu, %lu, ", a, b);
+    for(i = 2; i < 98; i++)
+    {
+        c = a + b;
+        printf("%lu, ", c);
+        a = b;
+        b = c;
+    }
+    printf("%lu\n", a + b);
+    return 0;
 }
