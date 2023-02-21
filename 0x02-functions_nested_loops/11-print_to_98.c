@@ -10,12 +10,14 @@ if (n < 98)
 {
 for (; n < 98; n++)
 {
-int i = n;
-while (i > 0)
-{
-_putchar(i % 10 + '0');
-i /= 10;
+int reverse = 0, remainder;
+
+while (n != 0) {
+remainder = n % 10;
+reverse = reverse * 10 + remainder;
+n /= 10;
 }
+_putchar(reverse + '0');
 _putchar(',');
 _putchar(' ');
 }
@@ -24,15 +26,16 @@ else
 {
 for (; n > 98; n--)
 {
-int i = n;
-while (i > 0)
-{
-_putchar(i % 10 + '0');
-i /= 10;
+int reverse = 0, remainder;
+
+while (n != 0) {
+remainder = n % 10;
+reverse = reverse * 10 + remainder;
+n /= 10;
 }
+_putchar(reverse + '0');
 _putchar(',');
 _putchar(' ');
-}
 }
 _putchar('9');
 _putchar('8');
