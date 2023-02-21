@@ -8,14 +8,12 @@ int main(void)
 {
 unsigned long int i = 1, j = 2, sum = 0;
 
-while (i <= 4000000)
+while (j <= 4000000)
 {
-i = j + i;
+if (j % 2 == 0)
+sum += j;
+i = j;
 j = i + j;
-if (i % 2 == 0 && i <= 4000000)
-{
-sum += i;
-}
 }
 printf("%lu\n", sum);
 return (0);
