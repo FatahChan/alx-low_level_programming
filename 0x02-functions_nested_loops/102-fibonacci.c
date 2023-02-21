@@ -15,4 +15,5 @@ printf("%d, ", i);
 j = i + j;
 printf("%d, ", j);
 }
+return (0);
 }
