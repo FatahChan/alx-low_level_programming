@@ -9,7 +9,7 @@ int main(void)
 unsigned long int i = 1, j = 2, k, count = 50;
 
 printf("%lu, %lu, ", i, j);
-for (k = 2; k < count; k+=2)
+for (k = 2; k < count; k += 2)
 {
 i = i + j;
 printf("%lu, ", i);
