@@ -6,24 +6,13 @@
 */
 int main(void)
 {
-int sum = 0, fives = 1, threes = 1;
-while (fives < 1024)
+int sum = 0, i;
+for (i = 1; i < 1024; i++)
 {
-fives = fives * 5;
-if (fives > 1024)
+if (i % 3 == 0 || i % 5 == 0)
 {
-break;
-}
-sum = sum + fives;
-}
-while (threes < 1024)
-{
-threes = threes * 3;
-if (threes > 1024)
-{
-break;
-}
-sum = sum + threes;
+sum += i;
+}   
 }
 printf("%d \n", sum);
 return (0);
