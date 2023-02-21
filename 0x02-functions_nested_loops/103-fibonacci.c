@@ -8,8 +8,7 @@ int main(void)
 {
 unsigned long int i = 1, j = 2, sum = 3;
 
-printf("%lu, %lu, ", i, j);
-while (j <= 4000000)
+while (i <= 4000000)
 {
     i = j + i;
     j = i + j;    
