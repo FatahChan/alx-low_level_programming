@@ -6,7 +6,7 @@
 */
 int main(void)
 {
-int sum = 0, i, fives = 1, threes = 1;
+int sum = 0, fives = 1, threes = 1;
 while (fives < 1024)
 {
 fives = fives * 5;
