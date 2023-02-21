@@ -12,9 +12,9 @@ printf("%d, %d, ", i, j);
 for (k = 0; k < count; k++)
 {
 i = i + j;
-printf("%d, ", i);
+printf("%lld, ", i);
 j = i + j;
-printf("%d, ", j);
+printf("%lld, ", j);
 }
 return (0);
 }
