@@ -12,6 +12,7 @@ while (i <= 4000000)
 {
 i = j + i;
 j = i + j;
+if (i + j % 2 == 0)
 sum += i + j;
 }
 printf("%lu\n", sum);
