@@ -1,8 +1,9 @@
 #include "main.h"
-/*
-* 1-alphabet.c - Prints the alphabet in lowercase
-* Return: void
-*/
+/**
+ * print_alphabet - prints the alphabet, in lowercase, followed by a new line.
+ *
+ * Return: void
+ */
 void print_alphabet(void)
 {
 char c;
