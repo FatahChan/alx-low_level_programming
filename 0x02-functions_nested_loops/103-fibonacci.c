@@ -6,14 +6,16 @@
  */
 int main(void)
 {
-unsigned long int i = 1, j = 2, sum = 3;
+unsigned long int i = 1, j = 2, sum = 0;
 
 while (i <= 4000000)
 {
 i = j + i;
 j = i + j;
-if (i + j % 2 == 0)
-sum += i + j;
+if (i % 2 == 0)
+{
+sum += i;
+}
 }
 printf("%lu\n", sum);
 return (0);
