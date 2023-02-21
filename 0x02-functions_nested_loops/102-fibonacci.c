@@ -14,10 +14,10 @@ for (k = 2; k < count; k += 2)
 i = i + j;
 printf("%lu, ", i);
 j = i + j;
-printf("%lu ", j);
+printf("%lu", j);
 if (k < count - 2)
 {
-printf(",");
+printf(", ");
 }
 }
 return (0);
