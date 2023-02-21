@@ -10,9 +10,9 @@ unsigned long int i = 1, j = 2, sum = 3;
 
 while (i <= 4000000)
 {
-    i = j + i;
-    j = i + j;    
-    sum += i + j;
+i = j + i;
+j = i + j;
+sum += i + j;
 }
 printf("%lu\n", sum);
 return (0);
