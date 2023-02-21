@@ -4,6 +4,6 @@
  *
  * Return: void
  */
-void putchar() {
+void _putchar() {
     printf("_putchar\n");
 }
