@@ -11,7 +11,7 @@ unsigned long int b1 = 2, b2 = 0, b3 = 0;
 unsigned long int c1 = 0, c2 = 0, c3 = 0;
 unsigned long int count = 98, k;
 printf("%lu, %lu", a1, b1);
-for (k = 2; k < count; k ++)
+for (k = 2; k < count; k++)
 {
 c1 = (a1 + b1) % 1000000000;
 c2 = a2 + b2 + (a1 + b1) / 1000000000;
@@ -37,5 +37,5 @@ printf(", %lu", c1);
 }
 }
 printf("\n");
-return 0;
+return (0);
 }
