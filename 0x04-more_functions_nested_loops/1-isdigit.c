@@ -1,5 +1,5 @@
 /**
- * _isupper - checks for uppercase character
+ * _isdigit - checks for digit character
  * @c: character to be checked
  * Return: 1 if c is digit, 0 otherwise
  */
