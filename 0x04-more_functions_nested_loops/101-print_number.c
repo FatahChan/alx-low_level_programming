@@ -23,7 +23,7 @@ i /= 10;
 }
 while (i > 0)
 {
-_putchar((n / i) + '0');
+_putchar((n / i) +'0');
 n = n % i;
 i = i / 10;
 }
