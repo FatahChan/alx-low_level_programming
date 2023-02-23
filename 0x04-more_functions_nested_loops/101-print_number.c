@@ -13,9 +13,18 @@ if (n == 0)
 _putchar('0');
 }
 if (n < 0)
+if (n < 0)
 {
 _putchar('-');
+if (n == -2147483648)
+{
+_putchar('2');
+n = 147483648;
+}
+else
+{
 n *= -1;
+}
 }
 while (i > n)
 {
