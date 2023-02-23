@@ -17,11 +17,22 @@ int main(void)
   _putchar('\n');
   print_number(-98);
   _putchar('\n');
+  print_number(-0);
+  _putchar('\n');
+  print_number(2147483647);
+  _putchar('\n');
+  print_number(-2147483647);
+  _putchar('\n');
+  print_number(1000000000);
+  _putchar('\n');
+  print_number(-2147483648);
+  _putchar('\n');
   return (0);
 }
 void print_number(int n)
 {
   int i = 1000000000;
+
   if (n == 0)
   {
     _putchar('0');
@@ -29,7 +40,13 @@ void print_number(int n)
   if (n < 0)
   {
     _putchar('-');
-    n *= -1;
+    if (n == -2147483648)
+    {
+      _putchar('2');
+      n = 147483648;
+    }else{
+      n *= -1;
+    }
   }
   while (i > n)
   {
