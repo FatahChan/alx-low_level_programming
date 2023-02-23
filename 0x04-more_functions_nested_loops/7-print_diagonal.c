@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_diagonal - prints a diagonal line of n length
- * @n: number of times to print \\
+ * @n: number of times to print
  * Return: void
  */
 void print_diagonal(int n)
@@ -15,6 +15,6 @@ for (j = 0; j < i+1; j++)
 _putchar(' ');
 }
 _putchar('\\');
-}
 _putchar('\n');
+}
 }
