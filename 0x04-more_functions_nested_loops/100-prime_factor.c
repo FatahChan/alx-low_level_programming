@@ -6,5 +6,6 @@
  */
 int main(void)
 {
-printf("%lu\n", 50829599);
+printf("%d\n", 50829599);
+return (0);
 }
