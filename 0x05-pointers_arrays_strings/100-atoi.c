@@ -20,7 +20,7 @@ sign *= -1;
 if (s[i] >= '0' && s[i] <= '9')
 {numberFound = 1;
 
-result = result * power + (s[i] - '0') * sign;
+result = result *power + (s[i] - '0') * sign;
 power = 10;
 }
 if (numberFound == 1 && (s[i] < '0' || s[i] > '9'))
