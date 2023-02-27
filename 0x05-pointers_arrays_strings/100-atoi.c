@@ -21,7 +21,7 @@ if (i > 0 && s[i - 1] == '-')
 sign = -1;
 }
 result = result * power + (s[i] - '0');
-power *= 10;
+power = 10;
 }
 if (numberFound == 1 && (s[i] < '0' || s[i] > '9'))
 {
