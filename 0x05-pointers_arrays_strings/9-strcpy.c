@@ -6,10 +6,10 @@
  * @src: pointer to a string
  * Return: pointer to the resulting string dest
  */
-
 char *_strcpy(char *dest, char *src)
 {
 int i = 0;
+
 while (src[i] != '\0')
 {
 dest[i] = src[i];
