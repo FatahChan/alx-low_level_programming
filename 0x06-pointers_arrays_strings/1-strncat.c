@@ -14,13 +14,10 @@ while (dest[dest_i] != '\0')
 {
 dest_i++;
 }
-while (1)
+for (src_i = 0; src_i < n && src[src_i] != '\0'; src_i++, dest_i++)
 {
 dest[dest_i] = src[src_i];
-dest_i++;
-src_i++;
-if (src[src_i] == '\0' || src_i == n)
-break;
 }
+dest[dest_i] = '\0';
 return (dest);
 }
