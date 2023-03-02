@@ -3,6 +3,4 @@
 !README.md
 *.exe
 *.dll
-
-
-
+test.c
