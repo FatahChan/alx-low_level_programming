@@ -6,11 +6,10 @@
 char *cap_string(char *str)
 {
 	int i = 0;
+	char sep[] = " \t\n,;.!?\"(){}";
 
 	if (str[i] == '\0')
 		return (str);
-
-	char *sep = " \t\n,;.!?\"(){}";
 
 	if (str[i] >= 'a' && str[i] <= 'z')
 		str[i] = str[i] - 32;
