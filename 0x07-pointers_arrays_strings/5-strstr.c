@@ -4,27 +4,23 @@
  * @needle: substring to search for
  * Return: pointer to the beginning of the located substring, or NULL if not
  */
-char *_strstr(char *haystack, char *needle)
-{
-	int i = 0;
-	int j = 0;
+char *_strstr(char *haystack, char *needle) {
+	char *ptr = 0;
+	int i, j;
 
-	while (haystack[i] != '\0')
-	{
-		if (haystack[i] == needle[j])
-		{
-			j++;
+	for (i = 0; haystack[i] != '\0'; i++) {
+		if (haystack[i] == needle[0]) {
+			for (j = 0; needle[j] != '\0'; j++) {
+
+				if (haystack[i+j] != needle[j]) {
+					break;
+				}
+			}
+			if (needle[j] == '\0') {
+				ptr = &haystack[i];
+				break;
+			}
 		}
-		else
-		{
-			j = 0;
-		}
-		if (needle[j] == '\0')
-		{
-			return (haystack + i - j + 1);
-		}
-		i++;
 	}
-	return (0);
-	
+	return ptr;
 }
