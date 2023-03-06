@@ -12,12 +12,12 @@ unsigned int _strspn(char *s, char *accept)
 
 	while (accept[j] != '\0')
 	{
-		map[accept[j]] = 1;
+		map[(int)accept[j]] = 1;
 		j++;
 	}
 	while (s[i] != '\0')
 	{
-		if (map[s[i]] == 0)
+		if (map[(int)s[i]] == 0)
 			break;
 		i++;
 	}
