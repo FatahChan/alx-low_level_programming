@@ -6,9 +6,9 @@
  */
 char *_strchr(char *s, char c)
 {
-	int i = 0;
+	unsigned long int i = 0;
 
-	while (s[i-1] != '\0')
+	while (s[i] != '\0')
 	{
 		if (s[i] == c)
 		{
