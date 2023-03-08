@@ -1,4 +1,3 @@
-
 /**
  * square_root_helper - Helper function to find the square root of a number
  * @n: number to find the square root of
@@ -8,8 +7,8 @@
  */
 int square_root_helper(int n, int start, int end)
 {
-	int mid;
-	int square;
+	unsigned long int mid;
+	unsigned long int square;
 
 	if (start > end)
 	{
@@ -48,6 +47,6 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (square_root_helper(n, 0, n));
+		return ((int)(square_root_helper(n, 0, n)));
 	}
 }
