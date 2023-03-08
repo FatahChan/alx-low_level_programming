@@ -9,6 +9,7 @@ int square_root_helper(int n, int start, int end)
 {
 	unsigned long int mid;
 	unsigned long int square;
+	unsigned long int n_long = n;
 
 	if (start > end)
 	{
@@ -16,11 +17,11 @@ int square_root_helper(int n, int start, int end)
 	}
 	mid = start + (end - start) / 2;
 	square = mid * mid;
-	if (square == n)
+	if (square == n_long)
 	{
 		return (mid);
 	}
-	else if (square < n)
+	else if (square < n_long)
 	{
 		return (square_root_helper(n, mid + 1, end));
 	}
