@@ -6,6 +6,8 @@
 !*.c
 !*.h
 !*.md
-
+!*.a
+!*.o
+!*.sh
 *main.c
 *test.c
