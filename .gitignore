@@ -1,6 +1,8 @@
-[!0-9]
-*~
-!README.md
-*.exe
-*.dll
-test.c
+*
+!*.c
+!*.md
+!*.h
+*main.c
+
+
+
