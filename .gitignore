@@ -1,8 +1,11 @@
+# Ignore all files without an extension
 *
+!*/
+
+# Allow files with the .c extension
 !*.c
-!*.md
 !*.h
+!*.md
+
 *main.c
-
-
-
+*test.c
