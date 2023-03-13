@@ -1,25 +1,29 @@
+#include "main.h"
 /**
- * _strspn - gets the length of a prefix substring
- * @s: string to be searched
- * @accept: string containing characters to match
- * Return: number of bytes in the initial segment of s which consist only of
+ * _strspn - Entry point
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int map[256] = {0};
-	int i = 0;
-	int j = 0;
+	unsigned int n = 0;
+	int r;
 
-	while (accept[j] != '\0')
+
+	while (*s)
 	{
-		map[(int)accept[j]] = 1;
-		j++;
+		for (r = 0; accept[r]; r++)
+		{
+			if (*s == accept[r])
+			{
+				n++;
+				break;
+			}
+			else if (accept[r + 1] == '\0')
+				return (n);
+		}
+		s++;
 	}
-	while (s[i] != '\0')
-	{
-		if (map[(int)s[i]] == 0)
-			break;
-		i++;
-	}
-	return (i);
+	return (n);
 }
