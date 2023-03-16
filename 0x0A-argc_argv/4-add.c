@@ -10,10 +10,11 @@ int main(int argc, char *argv[])
 {
 	int sum = 0;
 	int i = 0;
+	int j = 0;
 
 	for (i = 1; i < argc; i++)
 	{
-		for (int j = 0; argv[i][j]; j++)
+		for (j = 0; argv[i][j]; j++)
 		{
 			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
