@@ -11,23 +11,14 @@ int main(int argc, char *argv[])
 	int i = 0;
 	int change = 0;
 	int coins[] = {25, 10, 5, 2, 1};
-	int amount = 0;
+	unsigned int amount = 0;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	
-	for (i = 0; argv[1][i]; i++)
-	{
-		if (argv[1][i] < '0' || argv[1][i] > '9')
-		{
-			printf("Error\n");
-			return (1);
-		}
-	}
-	
+
 	amount = atoi(argv[1]);
 	if (amount < 0)
 	{
@@ -40,7 +31,7 @@ int main(int argc, char *argv[])
 		change += amount / coins[i];
 		amount %= coins[i];
 	}
-	
+
 	printf("%d\n", change);
 	return (0);
 }
