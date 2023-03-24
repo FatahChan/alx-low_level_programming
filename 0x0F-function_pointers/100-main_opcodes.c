@@ -24,7 +24,12 @@ int main(int argc, char *argv[])
 	num_bytes = atoi(argv[1]);
 	for (i = 0; i < num_bytes; i++)
 	{
-		printf("%02x ", (unsigned char)code[i]);
+		if (i == num_bytes - 1)
+		{
+			printf("%02hhx\n", code[i]);
+			break;
+		}
+		printf("%02hhx ", code[i]);
 	}
 	printf("\n");
 	return (0);
